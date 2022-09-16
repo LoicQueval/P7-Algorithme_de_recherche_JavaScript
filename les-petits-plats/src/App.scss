@@ -1,44 +1,10 @@
+@forward "./components/header/header";
+@forward "./components/search-bar/search-bar";
+
 #root {
   display: flex;
-  justify-content: center;
-
-  div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 90%;
-
-    header {
-      display: flex;
-      justify-content: center;
-
-      img {
-        margin-top: 25px;
-        width: 375px;
-      }
-    }
-
-    div {
-      position: relative;
-      width: 100%;
-
-      input {
-        height: 50px;
-        margin-top: 25px;
-        padding: 0 20px;
-        font-size: large;
-        background-color: #80808033;
-        border: none;
-        border-radius: 5px;
-      }
-
-      .fa-magnifying-glass {
-        position: absolute;
-        top: 52px;
-        right: 20px;
-      }
-    }
-  }
+  flex-direction: column;
+  width: 90%;
 }
 
 

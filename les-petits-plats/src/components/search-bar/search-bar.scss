@@ -1,0 +1,21 @@
+.search-bar {
+  position: relative;
+  width: -moz-available;
+
+  input {
+    height: 50px;
+    margin-top: 25px;
+    padding: 0 20px;
+    font-size: large;
+    background-color: #80808033;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .fa-magnifying-glass {
+    position: absolute;
+    top: 52px;
+    right: 10px;
+  }
+}
