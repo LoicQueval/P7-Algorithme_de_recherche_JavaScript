@@ -19,12 +19,12 @@ header img {
   background-color: rgba(128, 128, 128, 0.2);
   border: none;
   border-radius: 5px;
-  width: 100%;
+  width: 98%;
 }
 .search-bar .fa-magnifying-glass {
   position: absolute;
-  top: 52px;
-  right: 10px;
+  top: 50px;
+  right: 20px;
 }
 
 #root {
