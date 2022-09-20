@@ -8,11 +8,11 @@ section .test {
 }
 section .test article .image {
   background-color: rgba(128, 128, 128, 0.6);
-  height: 200px;
+  height: 250px;
 }
 section .test article .card {
   background-color: rgba(128, 128, 128, 0.3333333333);
-  height: 200px;
+  height: 250px;
   padding: 25px;
 }
 section .test article .card .heading {
@@ -44,19 +44,14 @@ section .test article .card .content {
   justify-content: space-between;
   margin-top: 20px;
 }
-section .test article .card .content .ingredient {
-  width: 100%;
-}
 section .test article .card .content .description {
-  width: 275px;
   max-width: 275px;
 }
 section .test article .card .content .description p {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  height: 150px;
-  width: 275px;
 }
 
 p {

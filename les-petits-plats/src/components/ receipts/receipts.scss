@@ -9,12 +9,12 @@ section {
     article {
       .image {
         background-color: #80808099;
-        height: 200px;
+        height: 250px;
       }
 
       .card {
         background-color: #80808055;
-        height: 200px;
+        height: 250px;
         padding: 25px;
 
         .heading {
@@ -51,20 +51,14 @@ section {
           justify-content: space-between;
           margin-top: 20px;
 
-          .ingredient {
-            width: 100%;
-          }
-
           .description {
-            width: 275px;
             max-width: 275px;
 
             p {
+              display: -webkit-box;
+              -webkit-line-clamp: 9;
+              -webkit-box-orient: vertical;
               overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              height: 150px;
-              width: 275px;
             }
           }
         }
