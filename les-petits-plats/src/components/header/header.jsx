@@ -1,12 +1,9 @@
+import "./header.css";
 import logo from '../../assets/logo.PNG';
 
-export const Header = ({data}) => {
-    const onClick = () => {
-        console.debug(data);
-        console.log(data);
-    }
+export const Header = () => {
     return (
-        <header className="App-header" onClick={onClick}>
+        <header>
             <h1>
                 <img src={logo} alt="logo"/>
             </h1>

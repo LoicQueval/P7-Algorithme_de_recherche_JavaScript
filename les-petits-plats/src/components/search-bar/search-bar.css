@@ -1,8 +1,8 @@
-div {
+.search-bar {
   position: relative;
   width: 100%;
 }
-div input {
+.search-bar input {
   height: 50px;
   margin-top: 25px;
   padding: 0 20px;
@@ -10,10 +10,11 @@ div input {
   background-color: rgba(128, 128, 128, 0.2);
   border: none;
   border-radius: 5px;
+  width: 98%;
 }
-div .fa-magnifying-glass {
+.search-bar .fa-magnifying-glass {
   position: absolute;
-  top: 52px;
+  top: 50px;
   right: 20px;
 }
 
