@@ -9,6 +9,10 @@
     font-size: medium;
     width: 800px;
     margin-bottom: 10px;
+
+    &:focus {
+      outline:  none;
+    }
   }
 
   div {

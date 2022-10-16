@@ -32,18 +32,18 @@ const App = () => {
 
             recipeIngredients.forEach((recipeIngredient) => {
                     const ingredient = recipeIngredient['ingredient'][0].toUpperCase() + recipeIngredient['ingredient'].toLowerCase().slice(1)
-                    ingredient.includes(tagsQuery) ? ingredients.add(ingredient) : console.log('no ingredient');
+                    ingredient.toLowerCase().includes(tagsQuery.toLowerCase()) ? ingredients.add(ingredient) : console.log('no ingredient');
                 }
             );
 
             recipeUstencils.forEach((recipeUstencil) => {
                     const ustencil = recipeUstencil[0].toUpperCase() + recipeUstencil.toLowerCase().slice(1)
-                    ustencil.includes(utensilsQuery) ? ustencils.add(ustencil) : console.log('no ustencil');
+                    ustencil.toLowerCase().includes(utensilsQuery.toLowerCase()) ? ustencils.add(ustencil) : console.log('no ustencil');
                 }
             );
 
             const appliance = recipeAppliances[0].toUpperCase() + recipeAppliances.toLowerCase().slice(1)
-            appliance.includes(appliancesQuery) ? appliances.add(appliance) : console.log('no appliances');
+            appliance.toLowerCase().includes(appliancesQuery.toLowerCase()) ? appliances.add(appliance) : console.log('no appliances');
         });
 
         setAllIngredients(Array.from(ingredients));
