@@ -3,5 +3,9 @@
   flex-direction: column;
   width: 90%;
 }
+#root #search-tags {
+  display: flex;
+  align-items: last baseline;
+}
 
 /*# sourceMappingURL=App.css.map */

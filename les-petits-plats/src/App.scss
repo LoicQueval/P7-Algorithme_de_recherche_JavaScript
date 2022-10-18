@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   width: 90%;
+
+  #search-tags {
+    display: flex;
+    align-items: last baseline;
+  }
 }
 
 

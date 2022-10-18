@@ -9,6 +9,7 @@ import {SearchTags} from './components/search-tags/search-tags';
 
 const App = () => {
     const [data, setData] = useState(undefined);
+
     const [query, setQuery] = useState('');
     const [tagsQuery, updateTagsQuery] = useState('');
     const [appliancesQuery, updateAppliancesQuery] = useState('');
@@ -61,15 +62,17 @@ const App = () => {
         <>
             <Header/>
             <SearchBar updateSearchQuery={setQuery}/>
-            <SearchTags tags={allIngredients} updateTagsQuery={updateTagsQuery}
-                        placeholderName="Cherchez des ingredients"
-                        color="blue"/>
-            <SearchTags tags={allUstensils} updateTagsQuery={updateUtensilsQuery}
-                        placeholderName="Cherchez des appareils"
-                        color="red"/>
-            <SearchTags tags={allAppliances} updateTagsQuery={updateAppliancesQuery}
-                        placeholderName="Cherchez des ustensiles"
-                        color="green"/>
+            <div id="search-tags">
+                <SearchTags tags={allIngredients} updateTagsQuery={updateTagsQuery}
+                            placeholderName="Cherchez des ingredients"
+                            color="blue"/>
+                <SearchTags tags={allUstensils} updateTagsQuery={updateUtensilsQuery}
+                            placeholderName="Cherchez des appareils"
+                            color="red"/>
+                <SearchTags tags={allAppliances} updateTagsQuery={updateAppliancesQuery}
+                            placeholderName="Cherchez des ustensiles"
+                            color="green"/>
+            </div>
             <Receipts data={data}/>
         </>
     );
