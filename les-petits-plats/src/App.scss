@@ -3,9 +3,9 @@
   flex-direction: column;
   width: 90%;
 
-  #search-tags {
+  #tags {
     display: flex;
-    align-items: last baseline;
+    gap: 20px;
   }
 }
 

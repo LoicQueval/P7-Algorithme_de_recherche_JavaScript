@@ -1,0 +1,11 @@
+#tags-selected {
+  display: flex;
+  gap: 20px;
+  height: 30px;
+  p {
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
+

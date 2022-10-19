@@ -3,9 +3,9 @@
   flex-direction: column;
   width: 90%;
 }
-#root #search-tags {
+#root #tags {
   display: flex;
-  align-items: last baseline;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=App.css.map */

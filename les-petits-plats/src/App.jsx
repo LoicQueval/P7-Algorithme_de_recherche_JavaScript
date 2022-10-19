@@ -11,20 +11,19 @@ const App = () => {
     const [data, setData] = useState(undefined);
 
     const [query, setQuery] = useState('');
-    const [tagsQuery, updateTagsQuery] = useState('');
-    const [appliancesQuery, updateAppliancesQuery] = useState('');
-    const [utensilsQuery, updateUtensilsQuery] = useState('');
+    const [ingredientsQuery, updateIngredientsQuery] = useState([]);
+    const [appliancesQuery, updateAppliancesQuery] = useState([]);
+    const [utensilsQuery, updateUtensilsQuery] = useState([]);
 
     const [allIngredients, setAllIngredients] = useState([]);
     const [allUstensils, setAllUstensils] = useState([]);
     const [allAppliances, setAllAppliances] = useState([]);
 
+
     useEffect(() => {
         const ingredients = new Set();
         const ustencils = new Set();
         const appliances = new Set();
-
-        if (recipes === undefined) return;
 
         recipes.forEach(recipe => {
             const recipeIngredients = recipe['ingredients'];
@@ -33,37 +32,37 @@ const App = () => {
 
             recipeIngredients.forEach((recipeIngredient) => {
                     const ingredient = recipeIngredient['ingredient'][0].toUpperCase() + recipeIngredient['ingredient'].toLowerCase().slice(1)
-                    ingredient.toLowerCase().includes(tagsQuery.toLowerCase()) ? ingredients.add(ingredient) : console.log('no ingredient');
+                    ingredients.add(ingredient);
                 }
             );
 
             recipeUstencils.forEach((recipeUstencil) => {
                     const ustencil = recipeUstencil[0].toUpperCase() + recipeUstencil.toLowerCase().slice(1)
-                    ustencil.toLowerCase().includes(utensilsQuery.toLowerCase()) ? ustencils.add(ustencil) : console.log('no ustencil');
+                    ustencils.add(ustencil);
                 }
             );
 
             const appliance = recipeAppliances[0].toUpperCase() + recipeAppliances.toLowerCase().slice(1)
-            appliance.toLowerCase().includes(appliancesQuery.toLowerCase()) ? appliances.add(appliance) : console.log('no appliances');
+            appliances.add(appliance);
         });
 
         setAllIngredients(Array.from(ingredients));
         setAllUstensils(Array.from(ustencils));
         setAllAppliances(Array.from(appliances));
 
-    }, [tagsQuery, utensilsQuery, appliancesQuery]);
+    }, []);
 
     useEffect(() => {
-        setData(search1(query, tagsQuery, utensilsQuery, appliancesQuery, recipes));
+        setData(search1(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes));
         /*setData(search2(query, tagsQuery, utensilsQuery, appliancesQuery, recipes));*/
-    }, [query, tagsQuery, utensilsQuery, appliancesQuery]);
+    }, [query, ingredientsQuery, utensilsQuery, appliancesQuery]);
 
     return (
         <>
             <Header/>
             <SearchBar updateSearchQuery={setQuery}/>
-            <div id="search-tags">
-                <SearchTags tags={allIngredients} updateTagsQuery={updateTagsQuery}
+            <div id="tags">
+                <SearchTags tags={allIngredients} updateTagsQuery={updateIngredientsQuery}
                             placeholderName="Cherchez des ingredients"
                             color="blue"/>
                 <SearchTags tags={allUstensils} updateTagsQuery={updateUtensilsQuery}
