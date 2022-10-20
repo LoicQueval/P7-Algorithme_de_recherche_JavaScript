@@ -1,0 +1,59 @@
+section {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+section article .image {
+  background-color: rgba(128, 128, 128, 0.6);
+  height: 250px;
+}
+section article .card {
+  background-color: rgba(128, 128, 128, 0.3333333333);
+  height: 250px;
+  padding: 25px;
+}
+section article .card .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+section article .card .heading h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+}
+section article .card .heading div {
+  display: flex;
+  align-items: baseline;
+  gap: 7.5px;
+  min-width: 100px;
+}
+section article .card .heading div i {
+  font-size: 18px;
+}
+section article .card .heading div p {
+  font-weight: bold;
+  font-size: 18px;
+}
+section article .card .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+section article .card .content .description {
+  max-width: 275px;
+}
+section article .card .content .description p {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=receipts.css.map */

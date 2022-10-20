@@ -1,0 +1,69 @@
+section {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+
+  article {
+    .image {
+      background-color: #80808099;
+      height: 250px;
+    }
+
+    .card {
+      background-color: #80808055;
+      height: 250px;
+      padding: 25px;
+
+      .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 10px;
+
+        h2 {
+          margin: 0;
+          font-weight: normal;
+          font-size: 20px;
+        }
+
+        div {
+          display: flex;
+          align-items: baseline;
+          gap: 7.5px;
+          min-width: 100px;
+
+          i {
+            font-size: 18px;
+          }
+
+          p {
+            font-weight: bold;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .description {
+          max-width: 275px;
+
+          p {
+            display: -webkit-box;
+            -webkit-line-clamp: 9;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+p {
+  margin: 0;
+}
