@@ -19,43 +19,50 @@ const App = () => {
     const [allUstensils, setAllUstensils] = useState([]);
     const [allAppliances, setAllAppliances] = useState([]);
 
-
-    useEffect(() => {
+    const refreshFilters = () => {
         const ingredients = new Set();
         const ustencils = new Set();
         const appliances = new Set();
 
-        recipes.forEach(recipe => {
+        (data ?? recipes).forEach(recipe => {
             const recipeIngredients = recipe['ingredients'];
             const recipeUstencils = recipe['ustensils'];
             const recipeAppliances = recipe['appliance'];
 
             recipeIngredients.forEach((recipeIngredient) => {
-                    const ingredient = recipeIngredient['ingredient'][0].toUpperCase() + recipeIngredient['ingredient'].toLowerCase().slice(1)
-                    ingredients.add(ingredient);
-                }
-            );
+                const ingredient = recipeIngredient['ingredient'][0].toUpperCase() + recipeIngredient['ingredient'].toLowerCase().slice(1)
+                ingredients.add(ingredient);
+            });
 
             recipeUstencils.forEach((recipeUstencil) => {
-                    const ustencil = recipeUstencil[0].toUpperCase() + recipeUstencil.toLowerCase().slice(1)
-                    ustencils.add(ustencil);
-                }
-            );
+                const ustencil = recipeUstencil[0].toUpperCase() + recipeUstencil.toLowerCase().slice(1)
+                ustencils.add(ustencil);
+            });
 
             const appliance = recipeAppliances[0].toUpperCase() + recipeAppliances.toLowerCase().slice(1)
             appliances.add(appliance);
         });
 
-        setAllIngredients(Array.from(ingredients));
-        setAllUstensils(Array.from(ustencils));
-        setAllAppliances(Array.from(appliances));
+        setAllIngredients(Array.from(ingredients).filter(ing => !ingredientsQuery.includes(ing)));
+        setAllUstensils(Array.from(ustencils).filter(usten => !utensilsQuery.includes(usten)));
+        setAllAppliances(Array.from(appliances).filter(appli => !appliancesQuery.includes(appli)));
+        
+    }
 
+    // When loading for the first time, generate the filters with all the possible values
+    useEffect(() => {
+        refreshFilters();
     }, []);
 
+    // When modifying the search parameters, filter the recipes
     useEffect(() => {
         setData(search1(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes));
-        /*setData(search2(query, tagsQuery, utensilsQuery, appliancesQuery, recipes));*/
     }, [query, ingredientsQuery, utensilsQuery, appliancesQuery]);
+
+    // When the recipes have been filtered, refresh the possible filter values
+    useEffect(() => {
+        refreshFilters();
+    }, [data]);
 
     return (
         <>

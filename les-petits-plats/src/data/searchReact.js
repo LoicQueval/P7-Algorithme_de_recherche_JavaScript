@@ -15,17 +15,44 @@ export function search1(query, ingredients, utensils, devices, recipes) {
         const recipeAppliance = recipes[i].appliance[0].toUpperCase() + recipes[i].appliance.toLowerCase().slice(1);
 
         // Aucun filtres actif
-        if (!activeInput && !activeTag && !activeDevice && !activeUtensil) {
+        /* if (!activeInput && !activeTag && !activeDevice && !activeUtensil) {
+             results.push(recipes[i]);
+         }*/
+
+        /*if (!ingredients && !utensils && !devices && query.length < 3) {
             results.push(recipes[i]);
+        }*/
+
+        let recipeIsIncluded = true;
+        if (ingredients) {
+            for (let j = 0; j < ingredients.length; j++) {
+                let tag = ingredients[j];
+                let hasIngredient = false;
+                for (let k = 0; k < recipes[i].ingredients.length; k++) {
+                    if (recipes[i].ingredients[k].ingredient === tag) {
+                        hasIngredient = true;
+                        break;
+                    }
+                }
+                if (!hasIngredient) {
+                    recipeIsIncluded = false;
+                    break;
+                }
+            }
+            if (recipeIsIncluded) {  //
+                results.push(recipes[i]);
+            } else {
+                continue;
+            }
         }
 
         for (let j = 0; j < recipes[i].ingredients.length; j++) {
             // mise en forme de paramètres
-            console.log(recipes[i].ingredients.includes(ingredients), ingredients);
-            console.log(recipes[i].ingredients.map(i => i.ingredient));
             const recipeIngredient = recipes[i].ingredients[j].ingredient[0].toUpperCase() + recipes[i].ingredients[j].ingredient.toLowerCase().slice(1);
             // Conditions de filtres
             const filterIngredientByTag = recipeIngredient.includes(ingredients);
+
+
             const filterIngredientByInput = recipeIngredient.includes(searchInput);
             const filterNameByInput = recipeName.includes(searchInput);
             const filterDescriptionByInput = recipeDescription.includes(searchInput);
@@ -129,5 +156,12 @@ export function search2(query, tags, utensils, devices, recipes) {
 
    recipes.map(recipe => recipe.name)
 
+
+            // let recipeIngredients = recipes[i].ingredients.map((ing) => ing.ingredient);
+
+                // if (!recipeIngredients.includes(tag)) {
+                //     recipeIsIncluded = false;
+                //     break;
+                // }
 }
 */
