@@ -1,4 +1,5 @@
-export function search1(query, ingredients, utensils, devices, recipes) {
+export function search1(query, ingredients, utensils, appliances, recipes) {
+    console.log(ingredients, utensils);
     // Initialisation de variable
     const results = [];
     const searchInput = query.toLowerCase();
@@ -6,7 +7,7 @@ export function search1(query, ingredients, utensils, devices, recipes) {
     // Condition d'activation de filtres
     const activeTag = ingredients[0];
     const activeUtensil = utensils[0];
-    const activeDevice = devices[0];
+    const activeDevice = appliances[0];
     const activeInput = searchInput.length >= 3;
     for (let i = 0; i < recipes.length; i++) {
         // mise en forme de paramètres
@@ -15,26 +16,70 @@ export function search1(query, ingredients, utensils, devices, recipes) {
         const recipeAppliance = recipes[i].appliance[0].toUpperCase() + recipes[i].appliance.toLowerCase().slice(1);
 
         // Aucun filtres actif
-        /* if (!activeInput && !activeTag && !activeDevice && !activeUtensil) {
-             results.push(recipes[i]);
-         }*/
-
-        /*if (!ingredients && !utensils && !devices && query.length < 3) {
+        if (!ingredients[0] && !utensils[0] && !appliances[0] && query.length < 3) {
             results.push(recipes[i]);
-        }*/
+        }
 
+        // filtre ingredient
         let recipeIsIncluded = true;
-        if (ingredients) {
+        if (ingredients[0]) {
             for (let j = 0; j < ingredients.length; j++) {
-                let tag = ingredients[j];
+                let tag = ingredients[j].toLowerCase();
                 let hasIngredient = false;
                 for (let k = 0; k < recipes[i].ingredients.length; k++) {
-                    if (recipes[i].ingredients[k].ingredient === tag) {
+                    console.log(recipes[i].ingredients[k].ingredient, tag);
+                    if (recipes[i].ingredients[k].ingredient.toLowerCase() === tag) {
                         hasIngredient = true;
                         break;
                     }
                 }
                 if (!hasIngredient) {
+                    recipeIsIncluded = false;
+                    break;
+                }
+            }
+            if (recipeIsIncluded) {
+                results.push(recipes[i]);
+            } else {
+                continue;
+            }
+        }
+
+        // filtre ustencil
+        if (utensils[0]) {
+            for (let j = 0; j < utensils.length; j++) {
+                let tag = utensils[j].toLowerCase();
+                let hasUstensils = false;
+                for (let k = 0; k < recipes[i].ustensils.length; k++) {
+                    if (recipes[i].ustensils[k].toLowerCase() === tag) {
+                        hasUstensils = true;
+                        break;
+                    }
+                }
+                if (!hasUstensils) {
+                    recipeIsIncluded = false;
+                    break;
+                }
+            }
+            if (recipeIsIncluded) {  //
+                results.push(recipes[i]);
+            } else {
+                continue;
+            }
+        }
+
+        // filtre appareil
+        if (appliances[0]) {
+            for (let j = 0; j < appliances.length; j++) {
+                let tag = appliances[j].toLowerCase();
+                let hasDevices = false;
+                for (let k = 0; k < recipes[i].appliance.length; k++) {
+                    if (recipes[i].appliance.toLowerCase() === tag) {
+                        hasDevices = true;
+                        break;
+                    }
+                }
+                if (!hasDevices) {
                     recipeIsIncluded = false;
                     break;
                 }
@@ -56,7 +101,7 @@ export function search1(query, ingredients, utensils, devices, recipes) {
             const filterIngredientByInput = recipeIngredient.includes(searchInput);
             const filterNameByInput = recipeName.includes(searchInput);
             const filterDescriptionByInput = recipeDescription.includes(searchInput);
-            const filterDeviceByTag = recipeAppliance.includes(devices);
+            const filterDeviceByTag = recipeAppliance.includes(appliances);
             const mainInputFilter = filterIngredientByInput || filterNameByInput || filterDescriptionByInput;
 
             // Filtre principal

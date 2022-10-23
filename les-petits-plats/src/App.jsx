@@ -8,13 +8,16 @@ import {Receipts} from './components/receipts/receipts';
 import {SearchTags} from './components/search-tags/search-tags';
 
 const App = () => {
+    // Liste des recipes
     const [data, setData] = useState(undefined);
 
+    // Tag(s) sélectionné(s) pour filtrer
     const [query, setQuery] = useState('');
     const [ingredientsQuery, updateIngredientsQuery] = useState([]);
     const [appliancesQuery, updateAppliancesQuery] = useState([]);
     const [utensilsQuery, updateUtensilsQuery] = useState([]);
 
+    // Tous les tags disponibles pour autocompletion
     const [allIngredients, setAllIngredients] = useState([]);
     const [allUstensils, setAllUstensils] = useState([]);
     const [allAppliances, setAllAppliances] = useState([]);
@@ -46,7 +49,7 @@ const App = () => {
         setAllIngredients(Array.from(ingredients).filter(ing => !ingredientsQuery.includes(ing)));
         setAllUstensils(Array.from(ustencils).filter(usten => !utensilsQuery.includes(usten)));
         setAllAppliances(Array.from(appliances).filter(appli => !appliancesQuery.includes(appli)));
-        
+
     }
 
     // When loading for the first time, generate the filters with all the possible values
@@ -72,10 +75,10 @@ const App = () => {
                 <SearchTags tags={allIngredients} updateTagsQuery={updateIngredientsQuery}
                             placeholderName="Cherchez des ingredients"
                             color="blue"/>
-                <SearchTags tags={allUstensils} updateTagsQuery={updateUtensilsQuery}
+                <SearchTags tags={allAppliances} updateTagsQuery={updateAppliancesQuery}
                             placeholderName="Cherchez des appareils"
                             color="red"/>
-                <SearchTags tags={allAppliances} updateTagsQuery={updateAppliancesQuery}
+                <SearchTags tags={allUstensils} updateTagsQuery={updateUtensilsQuery}
                             placeholderName="Cherchez des ustensiles"
                             color="green"/>
             </div>
