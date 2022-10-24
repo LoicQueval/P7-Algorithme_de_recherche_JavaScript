@@ -1,5 +1,6 @@
 import {search1} from './data/searchReact';
-import {recipes} from './data/recipes';
+/*import {recipes} from './data/recipes';*/
+import {recipes} from './data/recipesHeavy';
 import './App.css'
 import React, {useState, useEffect} from 'react';
 import {Header} from './components/header/header';
@@ -49,7 +50,6 @@ const App = () => {
         setAllIngredients(Array.from(ingredients).filter(ing => !ingredientsQuery.includes(ing)));
         setAllUstensils(Array.from(ustencils).filter(usten => !utensilsQuery.includes(usten)));
         setAllAppliances(Array.from(appliances).filter(appli => !appliancesQuery.includes(appli)));
-
     }
 
     // When loading for the first time, generate the filters with all the possible values
@@ -59,7 +59,10 @@ const App = () => {
 
     // When modifying the search parameters, filter the recipes
     useEffect(() => {
+        const start = performance.now();
         setData(search1(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes));
+        const duration = performance.now() - start;
+        console.log(duration);
     }, [query, ingredientsQuery, utensilsQuery, appliancesQuery]);
 
     // When the recipes have been filtered, refresh the possible filter values

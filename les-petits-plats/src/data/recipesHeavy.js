@@ -1,4 +1,4 @@
-export const lostOfRecipes = [
+export const recipes = [
     {
         'id': 1,
         'name': 'Limonade de Coco',
@@ -1722,5 +1722,2480 @@ export const lostOfRecipes = [
         'description': 'Préparer la frangipane : Mélanger le sucre la poudre d\'amandes, le beurre et les oeufs. Étaler la moitié de la pate feuilleté et mettre dans un moule à tarte. Garnir de frangipane et recouvrir du reste de pate feuilletée. Mettre au four 30 minutes',
         'appliance': 'Four',
         'ustensils': ['rouleau à patisserie', 'fouet']
-    }
+    },
+    {
+        'id': 51,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 52,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 53,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 54,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 55,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 56,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 57,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 58,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 59,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 60,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 61,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 62,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 63,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 64,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 65,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 66,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 67,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 68,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 69,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 70,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 71,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 72,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 73,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 74,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 75,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 76,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 77,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 78,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 79,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 80,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 81,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 82,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 83,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 84,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 85,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 86,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 87,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 88,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 89,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 90,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 91,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 92,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 93,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 94,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 95,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 96,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 97,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 98,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 99,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 100,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 101,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 102,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 103,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 104,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 105,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 106,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 107,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 108,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 109,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 110,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 111,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 112,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 113,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 114,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 115,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 116,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 117,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 118,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 119,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 120,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 121,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 122,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 123,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 124,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
+    {
+        'id': 125,
+        'name': 'Limonade de Coco',
+        'servings': 1,
+        'ingredients': [
+            {
+                'ingredient': 'Lait de coco',
+                'quantity': 400,
+                'unit': 'ml'
+            },
+            {
+                'ingredient': 'Jus de citron',
+                'quantity': 2
+            },
+            {
+                'ingredient': 'Crème de coco',
+                'quantity': 2,
+                'unit': 'cuillères à soupe'
+            },
+            {
+                'ingredient': 'Sucre',
+                'quantity': 30,
+                'unit': 'grammes'
+            },
+            {
+                'ingredient': 'Glaçons'
+            }
+        ],
+        'time': 10,
+        'description': 'Mettre les glaçons à votre goût dans le blender, ajouter le lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer jusqu\'à avoir la consistence désirée',
+        'appliance': 'Blender',
+        'ustensils': ['cuillère à Soupe', 'verres', 'presse citron']
+    },
 ]

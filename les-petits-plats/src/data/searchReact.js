@@ -3,7 +3,6 @@ export function search1(query, ingredients, utensils, appliances, recipes) {
     const results = new Set();
 
     for (let i = 0; i < recipes.length; i++) {
-
         // Aucun filtres actif
         if (!ingredients[0] && !utensils[0] && !appliances[0] && query.length < 3) {
             results.add(recipes[i]);

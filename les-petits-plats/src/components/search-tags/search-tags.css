@@ -38,15 +38,27 @@ div #search-tags div button:hover {
   background-color: #1E90FF;
   color: white;
 }
+.blue::placeholder {
+  color: white;
+  opacity: 1;
+}
 
 .red {
   background-color: red;
   color: white;
 }
+.red::placeholder {
+  color: white;
+  opacity: 1;
+}
 
 .green {
   background-color: green;
   color: white;
+}
+.green::placeholder {
+  color: white;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=search-tags.css.map */
