@@ -11,7 +11,6 @@ export const SearchTags = ({tags, updateTagsQuery, placeholderName, color}) => {
     }, [tags])
 
     const onTagSelected = (e) => {
-        // Je remonte l'information à App.tsx
         const newArray = [...selectedTags];
         newArray.push(e.target.value);
         updateSelectedTags(newArray);
@@ -31,7 +30,8 @@ export const SearchTags = ({tags, updateTagsQuery, placeholderName, color}) => {
 
     return (
         <div>
-            <DisplayTags color={color} selectedTags={selectedTags}/>
+            <DisplayTags color={color} selectedTags={selectedTags} updateSelectedTags={updateSelectedTags}
+                         updateTagsQuery={updateTagsQuery}/>
             <div id="search-tags" className={color}>
                 <input type="text" placeholder={placeholderName} onChange={onTagQueryChange} className={color}/>
                 <div>

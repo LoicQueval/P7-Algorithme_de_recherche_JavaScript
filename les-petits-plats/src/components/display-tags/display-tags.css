@@ -1,12 +1,25 @@
-#tags-selected {
+#test {
   display: flex;
   gap: 20px;
   height: 30px;
 }
-#tags-selected p {
+#test #tags-selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   width: fit-content;
   border-radius: 5px;
-  padding: 5px;
+  padding: 20px 20px;
+}
+#test #tags-selected p {
+  font-size: small;
+  font-weight: bold;
+}
+#test #tags-selected button {
+  cursor: pointer;
+  font-size: large;
+  border: none;
 }
 
 /*# sourceMappingURL=display-tags.css.map */

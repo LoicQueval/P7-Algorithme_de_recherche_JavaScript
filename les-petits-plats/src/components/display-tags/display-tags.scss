@@ -1,11 +1,27 @@
-#tags-selected {
+#test {
   display: flex;
   gap: 20px;
   height: 30px;
-  p {
+
+  #tags-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     width: fit-content;
     border-radius: 5px;
-    padding: 5px;
+    padding: 20px 20px;
+
+    p {
+      font-size: small;
+      font-weight: bold;
+    }
+
+    button {
+      cursor: pointer;
+      font-size: large;
+      border: none;
+    }
   }
 }
 
