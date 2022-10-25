@@ -1,12 +1,13 @@
-import {search1} from './data/searchReact';
-/*import {recipes} from './data/recipes';*/
-import {recipes} from './data/recipesHeavy';
 import './App.css'
 import React, {useState, useEffect} from 'react';
 import {Header} from './components/header/header';
 import {SearchBar} from './components/search-bar/search-bar';
 import {Receipts} from './components/receipts/receipts';
 import {SearchTags} from './components/search-tags/search-tags';
+import {search1} from './data/searchReact';
+import {search2} from './data/searchReact';
+import {recipes} from './data/recipes';
+/*import {recipes} from './data/recipesHeavy';*/
 
 const App = () => {
     // Liste des recipes
@@ -59,10 +60,11 @@ const App = () => {
 
     // When modifying the search parameters, filter the recipes
     useEffect(() => {
-        const start = performance.now();
-        setData(search1(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes));
-        const duration = performance.now() - start;
-        console.log(duration);
+        /*const start = performance.now();*/
+        /*setData(search1(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes));*/
+        /*const duration = performance.now() - start;*/
+        /*console.log(duration);*/
+        setData(search2(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes));
     }, [query, ingredientsQuery, utensilsQuery, appliancesQuery]);
 
     // When the recipes have been filtered, refresh the possible filter values
