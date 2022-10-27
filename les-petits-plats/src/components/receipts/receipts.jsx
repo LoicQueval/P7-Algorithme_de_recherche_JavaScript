@@ -18,7 +18,7 @@ export const Receipts = ({data}) => {
                                 </div>
                                 <div className="content">
                                     <div>
-                                        {item.ingredients.map((sub_item) => (
+                                        {item.ingredients?.map((sub_item) => (
                                                 <div className="ingredient"
                                                      key={`articles-${item.id}-ingredients-${sub_item.ingredient}`}>
                                                     <p>{sub_item.ingredient}: {sub_item.quantity} {sub_item.unit}</p>

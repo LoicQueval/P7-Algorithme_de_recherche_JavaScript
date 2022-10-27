@@ -4,10 +4,8 @@ import {Header} from './components/header/header';
 import {SearchBar} from './components/search-bar/search-bar';
 import {Receipts} from './components/receipts/receipts';
 import {SearchTags} from './components/search-tags/search-tags';
-import {search1} from './data/searchReact';
-import {search2} from './data/searchReact';
-import {recipes} from './data/recipes';
-/*import {recipes} from './data/recipesHeavy';*/
+import {search2 as search} from './data/searchReact';
+import {recipes as recipes} from './data/recipes';
 
 const App = () => {
     // Liste des recipes
@@ -34,18 +32,20 @@ const App = () => {
             const recipeUstencils = recipe['ustensils'];
             const recipeAppliances = recipe['appliance'];
 
-            recipeIngredients.forEach((recipeIngredient) => {
+            recipeIngredients?.forEach((recipeIngredient) => {
                 const ingredient = recipeIngredient['ingredient'][0].toUpperCase() + recipeIngredient['ingredient'].toLowerCase().slice(1)
                 ingredients.add(ingredient);
             });
 
-            recipeUstencils.forEach((recipeUstencil) => {
+            recipeUstencils?.forEach((recipeUstencil) => {
                 const ustencil = recipeUstencil[0].toUpperCase() + recipeUstencil.toLowerCase().slice(1)
                 ustencils.add(ustencil);
             });
 
-            const appliance = recipeAppliances[0].toUpperCase() + recipeAppliances.toLowerCase().slice(1)
-            appliances.add(appliance);
+            if (recipeAppliances) {
+                const appliance = recipeAppliances[0].toUpperCase() + recipeAppliances.toLowerCase().slice(1)
+                appliances.add(appliance);
+            }
         });
 
         setAllIngredients(Array.from(ingredients).filter(ing => !ingredientsQuery.includes(ing)));
@@ -53,21 +53,23 @@ const App = () => {
         setAllAppliances(Array.from(appliances).filter(appli => !appliancesQuery.includes(appli)));
     }
 
-    // When loading for the first time, generate the filters with all the possible values
+    // When loading for the first time, retrieve the default recipes
     useEffect(() => {
-        refreshFilters();
+        setData(recipes);
     }, []);
 
     // When modifying the search parameters, filter the recipes
     useEffect(() => {
-        /*const start = performance.now();*/
-        /*setData(search1(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes));*/
-        /*const duration = performance.now() - start;*/
-        /*console.log(duration);*/
-        setData(search2(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes));
+        const start = performance.now();
+        const searchResults = search(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes);
+        setData(searchResults);
+        // setData(search(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes));
+        const duration = performance.now() - start;
+        console.log(duration);
     }, [query, ingredientsQuery, utensilsQuery, appliancesQuery]);
 
     // When the recipes have been filtered, refresh the possible filter values
+    // When loading for the first time, generate the filters with all the possible values
     useEffect(() => {
         refreshFilters();
     }, [data]);
