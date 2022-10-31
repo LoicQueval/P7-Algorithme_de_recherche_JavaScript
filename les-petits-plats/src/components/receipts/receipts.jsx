@@ -3,7 +3,7 @@ import './receipts.css';
 export const Receipts = ({data}) => {
     return (
         <section>
-            {data && (<>
+            {data &&(<>
                 {
                     data.map((item) => (
                         <article className="recipe" key={`articles-${item.id}`}>
@@ -36,6 +36,9 @@ export const Receipts = ({data}) => {
                     ))
                 }
             </>)}
+            {data && data.length === 0 &&(
+                <p>Aucun résultat</p>
+            )}
         </section>
     );
 }
