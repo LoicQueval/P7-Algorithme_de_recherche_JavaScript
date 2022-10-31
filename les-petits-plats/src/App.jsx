@@ -4,7 +4,7 @@ import {Header} from './components/header/header';
 import {SearchBar} from './components/search-bar/search-bar';
 import {Receipts} from './components/receipts/receipts';
 import {SearchTags} from './components/search-tags/search-tags';
-import {search2 as search} from './data/searchReact';
+import {search1 as search} from './data/searchReact';
 import {recipes as recipes} from './data/recipes';
 
 const App = () => {
@@ -63,16 +63,16 @@ const App = () => {
         const start = performance.now();
         const searchResults = search(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes);
         setData(searchResults);
-        // setData(search(query, ingredientsQuery, utensilsQuery, appliancesQuery, recipes));
         const duration = performance.now() - start;
         console.log(duration);
     }, [query, ingredientsQuery, utensilsQuery, appliancesQuery]);
 
     // When the recipes have been filtered, refresh the possible filter values
-    // When loading for the first time, generate the filters with all the possible values
     useEffect(() => {
         refreshFilters();
     }, [data]);
+
+    // When loading for the first time, generate the filters with all the possible values
 
     return (
         <>

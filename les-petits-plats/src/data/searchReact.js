@@ -1,13 +1,13 @@
 export function search1(query, ingredients, utensils, appliances, recipes) {
 
-    console.log(ingredients);
     // Aucun filtre actif
     if (!ingredients[0] && !utensils[0] && !appliances[0] && query.length < 3) {
         return recipes;
     }
 
-    // Initialisation de variable
+    // Tableau filtrer
     const results = [];
+
     for (let i = 0; i < recipes.length; i++) {
         // filtre principale
         let recipeIsIncluded = true;
@@ -73,7 +73,7 @@ export function search1(query, ingredients, utensils, appliances, recipes) {
                     break;
                 }
             }
-            if (!recipeIsIncluded) {  //
+            if (!recipeIsIncluded) {
                 continue;
             }
         }
@@ -94,9 +94,6 @@ export function search1(query, ingredients, utensils, appliances, recipes) {
                     break;
                 }
             }
-            if (!recipeIsIncluded) {
-                console.log('error');
-            }
         }
 
         if (recipeIsIncluded) {
@@ -110,79 +107,41 @@ export function search2(query, ingredients, utensils, appliances, recipes) {
     // Aucun filtre
     if (!ingredients[0] && !utensils[0] && !appliances[0] && query.length < 3)
         return recipes;
-    // Filtre principale
+
     return recipes
+        // Filtre Principale par ingredient, descriptions et nom de recette
         .filter((recipe) => {
             const search = query?.toLowerCase();
             return search < 3 || (
-                recipe.ingredients.map(ingredient => ingredient.ingredient.toLowerCase())
+                recipe.ingredients
+                    .map(ingredient => ingredient.ingredient.toLowerCase())
                     .some(ingredient => ingredient.includes(search)) ||
                 recipe.name.toLowerCase().includes(search) ||
-                    recipe.description.toLowerCase().includes(search)
+                recipe.description.toLowerCase().includes(search)
             );
         })
         // Filtre Tags ingredients
         .filter(recipe => {
-            return !ingredients || !ingredients[0] || ingredients.map((ing) => ing.toLowerCase()).every((ing) =>
-                recipe.ingredients.map(ingredient => ingredient.ingredient.toLowerCase())
-                    .some(ingredient => ing === ingredient)
-            );
+            return !ingredients || !ingredients[0] ||
+                ingredients
+                    .map((ing) => ing.toLowerCase())
+                    .every((ing) => recipe.ingredients
+                        .map(ingredient => ingredient.ingredient.toLowerCase())
+                        .some(ingredient => ing === ingredient)
+                    );
         })
         // Filtre Tags appliance
         .filter(recipe => {
-            return !appliances || !appliances[0] || appliances.map((appli) => appli.toLowerCase()).every((appli) =>
-                recipe.appliance.toLowerCase() === appli)
+            return !appliances || !appliances[0] ||
+                appliances
+                    .every((appli) => recipe.appliance.toLowerCase() === appli.toLowerCase())
         })
         // Filtre Tags utensils
         .filter(recipe => {
-            return !utensils || !utensils[0] || utensils.map((uten) => uten.toLowerCase()).every((uten) =>
-                recipe.ustensils.map(ustensil => ustensil.toLowerCase())
-                    .some(utensil => uten === utensil)
-            )
-        });
-
-    /* // Filtre principale
-     if (query.length >= 3) {
-         let search = query.toLowerCase();
-         /!* recipes
-              .filter(recipe => recipe.name.toLowerCase().includes(search))
-              .forEach(recipe => result.add(recipe))
-          console.log(result);
-          recipes
-              .filter(recipe => recipe.description.toLowerCase().includes(search))
-              .forEach(recipe => result.add(recipe))
-          console.log(result);*!/
-         recipes
-             .map(recipe => recipe.ingredients
-                 .filter(ingredients => ingredients.ingredient.toLowerCase().includes(search))
-             )
-     }
-     /!*let recipeIsIncluded = true;
-
-         let search = query.toLowerCase();
-         let hasQuery = false;
-         for (let j = 0; j < recipes[i].ingredients.length; j++) {
-             if (recipes[i].name.toLowerCase().includes(search)) {
-                 hasQuery = true;
-                 break;
-             }
-             if (recipes[i].description.toLowerCase().includes(search)) {
-                 hasQuery = true;
-                 break;
-             }
-             if (recipes[i].ingredients[j].ingredient.toLowerCase().includes(search)) {
-                 hasQuery = true;
-                 break;
-             }
-         }
-         if (!hasQuery) {
-             recipeIsIncluded = false;
-         }
-         if (recipeIsIncluded) {
-             results.add(recipes[i]);
-         } else {
-             continue;
-         }
-     *!/
-     return Array.from(result);*/
+            return !utensils || !utensils[0] || utensils
+                .map((uten) => uten.toLowerCase())
+                .every((uten) => recipe.ustensils
+                    .some(ustensils => uten === ustensils.toLowerCase())
+                )
+        })
 }
