@@ -72,8 +72,6 @@ const App = () => {
         refreshFilters();
     }, [data]);
 
-    // When loading for the first time, generate the filters with all the possible values
-
     return (
         <>
             <Header/>
