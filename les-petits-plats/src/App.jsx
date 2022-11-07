@@ -82,10 +82,10 @@ const App = () => {
                             color="blue"/>
                 <SearchTags tags={allAppliances} updateTagsQuery={updateAppliancesQuery}
                             placeholderName="Cherchez des appareils"
-                            color="red"/>
+                            color="green"/>
                 <SearchTags tags={allUstensils} updateTagsQuery={updateUtensilsQuery}
                             placeholderName="Cherchez des ustensiles"
-                            color="green"/>
+                            color="red"/>
             </div>
             <Receipts data={data}/>
         </>

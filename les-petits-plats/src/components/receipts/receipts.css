@@ -5,11 +5,11 @@ section {
   gap: 50px;
 }
 section article .image {
-  background-color: rgba(128, 128, 128, 0.6);
+  background: #C7BEBE;
   height: 250px;
 }
 section article .card {
-  background-color: rgba(128, 128, 128, 0.3333333333);
+  background: #E7E7E7;
   height: 250px;
   padding: 25px;
 }

@@ -35,7 +35,7 @@ div #search-tags div button:hover {
 }
 
 .blue {
-  background-color: #1E90FF;
+  background: #3282F7;
   color: white;
 }
 .blue::placeholder {
@@ -44,7 +44,7 @@ div #search-tags div button:hover {
 }
 
 .red {
-  background-color: red;
+  background: #ED6454;
   color: white;
 }
 .red::placeholder {
@@ -53,7 +53,7 @@ div #search-tags div button:hover {
 }
 
 .green {
-  background-color: green;
+  background: #68D9A4;
   color: white;
 }
 .green::placeholder {
