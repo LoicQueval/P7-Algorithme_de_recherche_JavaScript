@@ -72,8 +72,6 @@ const App = () => {
         refreshFilters();
     }, [data]);
 
-    // When loading for the first time, generate the filters with all the possible values
-
     return (
         <>
             <Header/>
@@ -84,10 +82,10 @@ const App = () => {
                             color="blue"/>
                 <SearchTags tags={allAppliances} updateTagsQuery={updateAppliancesQuery}
                             placeholderName="Cherchez des appareils"
-                            color="red"/>
+                            color="green"/>
                 <SearchTags tags={allUstensils} updateTagsQuery={updateUtensilsQuery}
                             placeholderName="Cherchez des ustensiles"
-                            color="green"/>
+                            color="red"/>
             </div>
             <Receipts data={data}/>
         </>
