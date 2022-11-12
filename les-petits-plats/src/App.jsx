@@ -5,7 +5,7 @@ import {SearchBar} from './components/search-bar/search-bar';
 import {Receipts} from './components/receipts/receipts';
 import {SearchTags} from './components/search-tags/search-tags';
 import {search1 as search} from './data/searchReact';
-import {recipes as recipes} from './data/recipes';
+import {recipes} from './data/recipes';
 
 const App = () => {
     // Liste des recipes
