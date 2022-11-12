@@ -12,7 +12,7 @@ export function search1(query, ingredients, utensils, appliances, recipes) {
         // filtre principale
         let recipeIsIncluded = true;
         if (query.length >= 3) {
-            let search = query.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");;
+            let search = query.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             let hasQuery = false;
             for (let j = 0; j < recipes[i].ingredients.length; j++) {
                 if (recipes[i].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(search)) {
