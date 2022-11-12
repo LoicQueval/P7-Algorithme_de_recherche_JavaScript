@@ -19,11 +19,11 @@ export function search1(query, ingredients, utensils, appliances, recipes) {
                     hasQuery = true;
                     break;
                 }
-                if (recipes[i].description.toLowerCase().includes(search)) {
+                if (recipes[i].description.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(search)) {
                     hasQuery = true;
                     break;
                 }
-                if (recipes[i].ingredients[j].ingredient.toLowerCase().includes(search)) {
+                if (recipes[i].ingredients[j].ingredient.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(search)) {
                     hasQuery = true;
                     break;
                 }
