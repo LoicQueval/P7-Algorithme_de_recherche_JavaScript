@@ -6,13 +6,13 @@ export function search2(query, ingredients, utensils, appliances, recipes) {
     return recipes
         // Filtre Principale par ingredient, descriptions et nom de recette
         .filter((recipe) => {
-            const search = query?.toLowerCase();
+            const search = query?.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
             return search < 3 || (
                 recipe.ingredients
                     .map(ingredient => ingredient.ingredient.toLowerCase())
-                    .some(ingredient => ingredient.includes(search)) ||
-                recipe.name.toLowerCase().includes(search) ||
-                recipe.description.toLowerCase().includes(search)
+                    .some(ingredient => ingredient.normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(search)) ||
+                recipe.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').includes(search) ||
+                recipe.description.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(search)
             );
         })
         // Filtre Tags ingredients
